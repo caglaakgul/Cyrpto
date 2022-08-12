@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="Menu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/orange</item>
+        <item name="android:homeAsUpIndicator">@color/orange</item>
+    </style>
+
+    <style name="ToolbarTitleTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/medium_text_size_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppBottomSheetStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppBottomSheetStyle" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+    </style>
+</resources>

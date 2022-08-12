@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragmentDest">
+
+    <fragment
+        android:id="@+id/loginFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.login.LoginFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_login" />
+    <action
+        android:id="@+id/action_global_loginFragmentDest"
+        app:destination="@id/loginFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/registerFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.register.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register" />
+    <action
+        android:id="@+id/action_global_registerFragmentDest"
+        app:destination="@id/registerFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/homeFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <action
+        android:id="@+id/action_global_homeFragmentDest"
+        app:destination="@id/homeFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/searchFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <action
+        android:id="@+id/action_global_searchFragmentDest"
+        app:destination="@id/searchFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/favoritesFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.favorites.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites" />
+    <action
+        android:id="@+id/action_global_favoritesFragmentDest"
+        app:destination="@id/favoritesFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/detailFragmentDest"
+        android:name="com.example.cryptocurrencypricetrackerapp.view.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_detailFragmentDest"
+        app:destination="@id/detailFragmentDest"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@navigation/nav_graph_main"
+        app:popUpToInclusive="true" />
+
+</navigation>

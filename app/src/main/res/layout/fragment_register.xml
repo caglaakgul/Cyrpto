@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.login.LoginFragment">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/big_100dp"
+            android:layout_height="@dimen/big_100dp"
+            android:layout_marginTop="@dimen/big_150dp"
+            android:src="@drawable/logo_splash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_40dp"
+            android:layout_marginTop="@dimen/small_50dp"
+            android:background="@drawable/bg_blue_edit_item"
+            android:hint="@string/text_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+            android:id="@+id/edtTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_40dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@drawable/bg_blue_edit_item"
+            android:hint="@string/text_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTextEmail" />
+
+        <EditText
+            android:id="@+id/edtTextPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_40dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@drawable/bg_blue_edit_item"
+            android:hint="@string/text_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTextPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_40dp"
+            android:layout_marginTop="@dimen/medium_40dp"
+            android:background="@drawable/bg_orange_item"
+            android:text="@string/text_register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTextPasswordConfirm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

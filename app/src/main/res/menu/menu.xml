@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_graph_home"
+        android:menuCategory="secondary"
+        android:icon="@drawable/home_outline"
+        android:title="@null" />
+    <item
+        android:id="@+id/nav_graph_favorites"
+        android:menuCategory="secondary"
+        android:icon="@drawable/favorite"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/nav_graph_search"
+        android:menuCategory="secondary"
+        android:icon="@drawable/search_outline"
+        android:title="@null" />
+</menu>
